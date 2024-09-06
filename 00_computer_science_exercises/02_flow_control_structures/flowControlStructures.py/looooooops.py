@@ -29,4 +29,8 @@ for eachFruit in fruits:
         break
     print(eachFruit)
 
+# for loops using range().  range(x) is EXCLUSIVE, it starts at 0 and ends at x -1 
+for i in range(10): # range is 0-9
+    print(i)
+
 

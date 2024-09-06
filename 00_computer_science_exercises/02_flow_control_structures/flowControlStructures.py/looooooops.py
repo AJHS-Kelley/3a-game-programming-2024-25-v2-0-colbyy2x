@@ -1,4 +1,6 @@
 # Loops, JaColby Allen, v0.0
+import random # import the random module for us tp use.
+# Generally put all your import statements at the top.
 
 #  TWO TYPES OF LOOPS 
 # for <-- Used when you kno whow many loops you'll need.
@@ -23,14 +25,32 @@
 #     print(eachFruit)
 
 # break Keyword -- Immediately exit the loop.
-fruits =["apple", " banana", "kiwi", "orange"]
-for eachFruit in fruits:
-    if eachFruit== "banana":
-        break
-    print(eachFruit)
+# fruits =["apple", " banana", "kiwi", "orange"]
+# for eachFruit in fruits:
+#     if eachFruit== "banana":
+#         break
+#     print(eachFruit)
 
 # for loops using range().  range(x) is EXCLUSIVE, it starts at 0 and ends at x -1 
-for i in range(10): # range is 0-9
-    print(i)
+# for i in range(10): # range is 0-9
+#     print(i)
 
+# # Might not always want to start at zero.
+# for i in range(10,100): #
+#     print(i)
+
+# # Not want to count by 1
+# for i in range(10,100,5) # 10 = start, 100 - 1 = stop, 5 = # to count by
+#     print(i)
+
+#
+
+
+
+# while loops -- Musoical Chairs
+playerscore = 0
+while playerscore < 199: # Run as long as this true.
+    print(f"Starting: {playerscore}")
+    playerscore += random.randint(1,3)
+    print(f"After : {playerscore}")
 

@@ -47,10 +47,16 @@ import random # import the random module for us tp use.
 
 
 
-# while loops -- Musoical Chairs
+# while loops -- Musical Chairs
 playerscore = 0
+counter =0
 while playerscore < 199: # Run as long as this true.
     print(f"Starting: {playerscore}")
-    playerscore += random.randint(1,3)
-    print(f"After : {playerscore}")
+    playerscore += random.randint(1,100)
+    print(f"After: {playerscore}")
+    counter += 1
+print(f" Counter: {counter}")
+
+
+
 

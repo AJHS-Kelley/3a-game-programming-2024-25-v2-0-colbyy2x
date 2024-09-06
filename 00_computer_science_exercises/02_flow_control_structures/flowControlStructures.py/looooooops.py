@@ -43,7 +43,9 @@ import random # import the random module for us tp use.
 # for i in range(10,100,5) # 10 = start, 100 - 1 = stop, 5 = # to count by
 #     print(i)
 
-#
+# Sometimes you're not done writing the loops.
+# for x in range (10):
+#     pass # tells Pthon this loop isn't finished, don't Freak out.
 
 
 

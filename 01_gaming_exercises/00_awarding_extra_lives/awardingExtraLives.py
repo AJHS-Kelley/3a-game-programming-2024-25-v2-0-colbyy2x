@@ -17,19 +17,20 @@ name = "bolby"
 # Output the score and number of lives to the screen.
 # BEGIN CODE HERE
 
-if score <=10000:
+if   score <=10000:
     print(" Player has lost an life.\n")
     lives = -1
     print(f"Hello { name} YOu scored {score} Thanks for playing.\n")
 
-elif score >= 10001:
-    print("Player Has Gained An Extra Life.\n")
-    lives += 1
-    print(f"Hello { name} YOu scored {score} Thanks for playing.\n")
+elif  score >= 10001:
+     print("Player Has Gained An Extra Life.\n")
+lives += 1
+print(f"Hello { name} YOu scored {score} Thanks for playing.\n")
 
-elif score> 100000:
+if score >= 100000:
     lives += 2
-    print("Player has gained 2 extra lives.\n")
+print("Player has gained 2 extra lives.\n")
 
-    print(f"Hello { name} YOu scored {score} Thanks for playing.\n")
+print(f"Hello { name} YOu scored {score} Thanks for playing.\n")
+
 

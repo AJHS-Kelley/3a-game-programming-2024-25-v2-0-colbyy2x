@@ -13,7 +13,9 @@ cpuScore = 0
 cpuChoice = None
 
 # PLAYER NAME INPUT
-def playerName(): # Function Signature -- name of function, (arguments if any)
+def playerName() -> str: # Function Signature -- name of function, (arguments if any)
+    """Gets the name from the player and returns it."""
+    #The line above is a DOCSTRING, it gives a brief example of what the function does.
     playerName = input("Please type your name and press enter.\n")
     print(f"Hello {playerName}!\n")
     isCorrect = input("Is that corretc? Type yes or no and press enter.\n").lower()
@@ -27,7 +29,8 @@ def playerName(): # Function Signature -- name of function, (arguments if any)
 playerName = playerName()                       
 
 # THE RULES using MULTI-LINE STRINGS
-def rules():
+def rules() -> None:
+    """This funcion prints the rules for rock, paper, scissors."""
     print(f"""
     Welcome, {playerName} to the rock, paper, scissors Robot!
     It's Time to play rock, paper, scissors!

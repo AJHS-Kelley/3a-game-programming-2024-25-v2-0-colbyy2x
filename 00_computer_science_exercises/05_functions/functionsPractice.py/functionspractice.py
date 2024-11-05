@@ -11,24 +11,28 @@ def helloWorldMulti(): # FUNCTION SIGNATURE
     lanaguage = input("What langauge do you want?")
     
     # print " Hello, World!" to the screeb in that lanaguage 
-    if language == "English":
+    if lanaguage == "English":
         print("In English:\nHello, World!\n")
-    elif langauge == " Spanish":
+    elif lanaguage == " Spanish":
         print("In Spanish:\nHola, Mundo!\n")
-    elif language == "French":
+    elif lanaguage == "French":
         print("In French:\nBon jour, Le Monde!\n")
     else:
         print("In Somali: \n, Haye caalamkow!\n")
 
-helloWorldMulti() # FUNCTION CALL
+helloWorldMulti(): # FUNCTION CALL
 
 # Function tp Detetmine Even / Odd Numbers 
 argument1 = random.randint(-1000, 1000)
 
-def isEven(argument: int) -> bool # Requires one ARGUMENT (argument1) and RETURNS a Boolean value.
+def isEven(argument: int) -> bool # Requires one ARGUMENT (argument1) and RETURNS a Boolean value.SSS
     """Determines is an integer value is even or odd."""
     if argument % 2 ==0:
         return True
     else:
         return False 
 isEven()
+
+print(isEven(argument1))
+
+ 

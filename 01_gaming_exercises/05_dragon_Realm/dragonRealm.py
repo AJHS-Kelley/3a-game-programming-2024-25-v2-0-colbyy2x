@@ -2,7 +2,22 @@
 
 import random
 import time
+import datetime 
 
+# SAVING DATA TO A FILE 
+# STEP 1-- Create thefile name to use.
+logFileName="DraginRealmLog" + str(time.time()) + ".txt"
+#logFileName = "DraginRealmLog.txt"
+# Example: dragonRealmLog1132AM.txt
+
+# STEP 2 -- CREATE / OPEN THE FILE TO SAVE THE DATA
+saveData = open(logFileName, "x")
+#FILE MODES 
+#"X" CREATES FILE, IF FILE EXIST, EXIT WITH ERROR MESSAGE
+#"W" CREATE FILE, IF FILE EXIST, ERASE AND OVERWRITE FILE CONTENTS
+# "A" CREATE FILE, IF FILE EXIST, APPEND DATA TO THE FILE.
+
+saveData.write("GAME STARTED"+ " "+ str(datetime.datetime.now())+ "\n")
 def displayIntro():
 
     print('One random night you hear something outside')
@@ -26,8 +41,8 @@ def checkPath(chosenPath):
         time.sleep(2)
         print("")
 
-    friendlyPath = random.randint(1)
-    DeadlyPath = random.randint(2)
+    friendlyPath = random.randint("1")
+    DeadlyPath = random.randint("2")
     
     if chosenPath == str(DeadlyPath):
         print('You have ran into a building with more demons')
@@ -53,3 +68,6 @@ while playAgain == 'yes' or playAgain == 'y':
     checkPath(PathNumber)
     print('Do you want to play again? (yes or no)')
     playAgain = input()
+
+# CLOSE THE FILE 
+saveData.close()

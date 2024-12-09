@@ -1,5 +1,5 @@
 # Demon Slayer, JacOlby Allen, v0.0
-
+# 2024-12-09 -- Code Check 
 import random
 import time
 import datetime 
@@ -8,7 +8,7 @@ fightBack = "yes or no "
 
 # SAVING DATA TO A FILE 
 # STEP 1-- Create thefile name to use.
-logFileName="DraginRealmLog" + str(time.time()) + ".txt"
+logFileName="DraginRealmLog.txt" # Changed log file. 
 #logFileName = "DraginRealmLog.txt"
 # Example: dragonRealmLog1132AM.txt
 
